@@ -827,7 +827,7 @@ Builder.registerComponent(TripDetailsOneAreaWrapper, {
         {
           name: "thumb",
           type: "file",
-          allowedFileTypes: ["jpeg", "jpg", "png", "webp"],
+          allowedFileTypes: ["jpeg", "jpg", "png", "webp", "avif"],
         },
         // { name: "class_name", type: "string", defaultValue: "" },
         {
@@ -837,7 +837,7 @@ Builder.registerComponent(TripDetailsOneAreaWrapper, {
             {
               name: "src",
               type: "file",
-              allowedFileTypes: ["jpeg", "jpg", "png", "webp"],
+              allowedFileTypes: ["jpeg", "jpg", "png", "webp", "avif"],
             },
           ],
         },
@@ -850,7 +850,7 @@ Builder.registerComponent(TripDetailsOneAreaWrapper, {
         {
           id: 1,
           thumb:
-            "/assets/images/hotels/Serena/Serena_Arusha/lakedulutiserena-33.jpg",
+            "/assets/images/hotels/Serena/Serena_Arusha/lakedulutiserena-33.avif",
           large_thumb: [
             { src: "/assets/images/listing/img_large_01.jpg" },
             { src: "/assets/images/listing/img_large_02.jpg" },
@@ -863,7 +863,7 @@ Builder.registerComponent(TripDetailsOneAreaWrapper, {
         {
           id: 2,
           thumb:
-            "/assets/images/hotels/Serena/Serena_Arusha/lakedulutiserena-33.jpg",
+            "/assets/images/hotels/Serena/Serena_Arusha/lakedulutiserena-33.avif",
           large_thumb: [
             { src: "/assets/images/listing/img_large_01.jpg" },
             { src: "/assets/images/listing/img_large_02.jpg" },
