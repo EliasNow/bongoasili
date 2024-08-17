@@ -332,10 +332,10 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.png" sizes="any" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap" />
         {/* Include Bootstrap CSS */}
-        <link
+        {/* <link
           href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css"
           rel="stylesheet"
-        />
+        /> */}
         {/* Include Google Maps JavaScript API */}
         <script
           src={`https://maps.googleapis.com/maps/api/js?key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}&callback=initMap&libraries=maps,marker`}
@@ -352,11 +352,11 @@ export default function RootLayout({
           </ClientLayout>
         </div>
         {/* Include Bootstrap JavaScript */}
-        <script
+        {/* <script
           src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"
           integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
           crossOrigin="anonymous"
-        ></script>
+        ></script> */}
       </body>
     </html>
   );

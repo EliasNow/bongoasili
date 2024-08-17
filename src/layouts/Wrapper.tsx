@@ -38,7 +38,7 @@ import { animationCreate } from "@/utils/utils";
 import ScrollToTop from "@/components/common/ScrollToTop";
 
 if (typeof window !== "undefined") {
-  require("bootstrap/dist/js/bootstrap");
+  require("bootstrap/dist/js/bootstrap.bundle.min.js");
 }
 
 interface WrapperProps {
