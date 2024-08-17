@@ -1,15 +1,13 @@
 // 15 aug 18.05 remove server-side sanitization (handled by AWS)
 import React from "react";
-import DOMPurify from "dompurify";
-
+import { sanitize } from "dompurify";
 interface CommonMainTripDescriptionProps {
   title: string;
   description: string;
 }
 
 const CommonMainTripDescription: React.FC<CommonMainTripDescriptionProps> = ({ title, description }) => {
-  const sanitizedDescription = DOMPurify.sanitize(description);
-
+  const sanitizedDescription = sanitize(description);
   return (
     <div className="property-overview mb-50 bg-white shadow4 border-20 p-40">
       <h4 className="mb-20">{title}</h4>
