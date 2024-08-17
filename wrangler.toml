@@ -1,0 +1,14 @@
+name = "bongo-next-app"
+compatibility_date = "2024-07-29"
+compatibility_flags = ["nodejs_compat"]
+pages_build_output_dir = ".vercel/output/static"
+
+# Define environment variables for production
+[env.production.vars]
+POSTMARK_API_KEY = "6025df43-e9cb-4a61-a42e-ad9b5e042130" 
+NEXT_PUBLIC_BUILDER_API_KEY = "e229899076ed4426ada2b970614343ea"
+
+# Define environment variables for development
+# [env.preview.vars]
+# POSTMARK_API_KEY = "6025df43-e9cb-4a61-a42e-ad9b5e042130"
+# NEXT_PUBLIC_BUILDER_API_KEY = "e229899076ed4426ada2b970614343ea"
