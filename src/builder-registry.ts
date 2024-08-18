@@ -70,9 +70,41 @@ import trip_listing_data from "./data/inner-data/TripListingData";
 import CardTripOverviewArea from "./components/Trips/card_trip_overview/CardTripOverviewArea";
 
 import awesome_thumb from "@/assets/images/hotels/Sarova/Sarova_Stanley/Sarova_Stanley_Front_View.jpeg";
+import VideoBackground from "./components/video/VideoBackground";
 
 builder.init(process.env.NEXT_PUBLIC_BUILDER_API_KEY!);
 
+// 18 aug has aws cloudfront url hardcoded
+Builder.registerComponent(VideoBackground, {
+  name: 'VideoBackground',
+  inputs: [
+    {
+      name: 'videoUrl',
+      type: 'url',
+      defaultValue: 'https://d4he32tg3z2m0.cloudfront.net/Serengeti_vid_cut.mp4', // Default video URL
+      required: true,
+      friendlyName: 'Video URL',
+    },
+    {
+      name: 'autoPlay',
+      type: 'boolean',
+      defaultValue: true,
+      friendlyName: 'Auto Play',
+    },
+    {
+      name: 'muted',
+      type: 'boolean',
+      defaultValue: true,
+      friendlyName: 'Muted',
+    },
+    {
+      name: 'loop',
+      type: 'boolean',
+      defaultValue: true,
+      friendlyName: 'Loop',
+    },
+  ],
+});
 Builder.registerComponent(TripList, {
   name: 'TripList',
   inputs: [

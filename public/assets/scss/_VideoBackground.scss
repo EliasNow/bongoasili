@@ -1,0 +1,58 @@
+/* public/assets/scss/_VideoBackground.scss */
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 2;
+  }
+  
+  .video-background .video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; // Ensures the video covers the background area
+  }
+
+// .video-background-container {
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     overflow: hidden;
+//     z-index: -1;
+//   }
+  
+//   .video-trigger {
+//     width: 100%;
+//     height: 100%;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     background: rgba(0, 0, 0, 0.5);
+//     cursor: pointer;
+//   }
+  
+//   .video-overlay {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     color: white;
+//   }
+  
+//   .play-button {
+//     background: transparent;
+//     border: 2px solid white;
+//     padding: 10px 20px;
+//     font-size: 18px;
+//     color: white;
+//     cursor: pointer;
+//     transition: background 0.3s ease;
+//   }
+  
+//   .play-button:hover {
+//     background: rgba(255, 255, 255, 0.1);
+//   }
