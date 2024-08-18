@@ -1,3 +1,5 @@
+// 18 aug 18.06 homepage without builder.io
+
 // src/app/page.tsx
 import { builder } from "@builder.io/sdk";
 import { RenderBuilderContent } from "../components/builder";

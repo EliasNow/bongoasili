@@ -21,7 +21,7 @@ export function middleware(req: NextRequest) {
     style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://stackpath.bootstrapcdn.com;
     img-src 'self' data: https://cdn.builder.io https://via.placeholder.com;
     font-src 'self' https://fonts.gstatic.com data:;
-    connect-src 'self' https://cdn.builder.io https://maps.googleapis.com https://d4he32tg3z2m0.cloudfront.net https://safari-video.s3.amazonaws.com https://cdn.builder.codes;
+    connect-src 'self' https://cdn.builder.io https://maps.googleapis.com http://localhost:5273 https://d4he32tg3z2m0.cloudfront.net https://safari-video.s3.amazonaws.com https://cdn.builder.codes;
     media-src 'self' https://cdn.builder.io https://d4he32tg3z2m0.cloudfront.net;
     frame-src 'self' https://www.google.com;
     object-src 'none';

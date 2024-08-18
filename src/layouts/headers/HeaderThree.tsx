@@ -10,7 +10,7 @@ import Offcanvas from "./Menu/Offcanvas"
 import logo_1 from "@/assets/images/logo/logo_06.svg";
 
 const HeaderThree = () => {
-   const { sticky } = UseSticky();
+   const sticky = UseSticky();
    const [offCanvas, setOffCanvas] = useState<boolean>(false);
 
    return (

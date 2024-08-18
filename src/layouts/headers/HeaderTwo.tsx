@@ -617,13 +617,13 @@ import Link from "next/link";
 import Image from "next/image";
 // import NavMenu from "@/components/Menu/NavMenu"; // Update this path
 import NavMenu from "./Menu/NavMenu";
-import UseSticky from "@/hooks/UseSticky";
 import LoginModal from "@/modals/LoginModal";
 import Offcanvas from "./Menu/Offcanvas";
 import HeaderSearchbar from "./Menu/HeaderSearchbar";
 import logo_1 from "@/assets/images/logo/Bongo Asili EASpec_edited_crop_resize.svg";
 import logo_2 from "@/assets/images/logo/Bongo Asili EASpec_edited_crop_resize.svg";
 import logo_3 from "@/assets/images/logo/Bongo Asili EASpec_edited_crop_resize.svg";
+import UseSticky from "@/hooks/UseSticky";
 
 interface HeaderTwoProps {
   style_1?: boolean;
@@ -642,7 +642,7 @@ const HeaderTwo: React.FC<HeaderTwoProps> = ({
   addListingText = "Add Listing",
   contactNumber = "+757 699-4478",
 }) => {
-  const { sticky } = UseSticky();
+  const sticky = UseSticky();
   const [offCanvas, setOffCanvas] = useState<boolean>(false);
   const [isSearch, setIsSearch] = useState<boolean>(false);
 

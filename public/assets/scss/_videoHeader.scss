@@ -1,0 +1,41 @@
+// src/assets/scss/_videoHeader.scss
+
+.video-header {
+    position: relative;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px 0;
+    z-index: 1000;
+  
+    &.sticky {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: rgba(255, 255, 255, 1);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+  
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .logo a {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+  
+    .navigation ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+  
+    .navigation a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+  }

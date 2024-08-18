@@ -33,10 +33,40 @@
 
 // 18 aug 14.34 use this instead of builder.io video
 // using a CDN like aws or cloudflare should be quicker.
-import React from "react";
-import "@/assets/scss/_VideoBackground.scss"
+// import React from "react";
+// import "@/assets/scss/_VideoBackground.scss"
 
-const VideoBackground = () => {
+// const VideoBackground = () => {
+//   return (
+//     <div className="video-background">
+//       <video
+//         autoPlay
+//         muted
+//         loop
+//         playsInline
+//         preload="metadata"
+//         className="video"
+//       >
+//         <source
+//           src="https://d4he32tg3z2m0.cloudfront.net/Serengeti_vid_cut.mp4"
+//         //   src="assets/videos/Serengeti_vid.mp4"
+//           type="video/mp4"
+//         />
+//         {/* You can add more <source> elements for different video formats */}
+//         Your browser does not support the video tag.
+//       </video>
+//     </div>
+//   );
+// };
+
+// export default VideoBackground;
+
+
+// 18 aug 17.58 slight update
+import React from "react";
+import "@/assets/scss/_VideoBackground.scss";
+
+const VideoBackground: React.FC = () => {
   return (
     <div className="video-background">
       <video
@@ -45,16 +75,15 @@ const VideoBackground = () => {
         loop
         playsInline
         preload="metadata"
-        className="video"
+        className="homepage-video"
       >
         <source
           src="https://d4he32tg3z2m0.cloudfront.net/Serengeti_vid_cut.mp4"
-        //   src="assets/videos/Serengeti_vid.mp4"
           type="video/mp4"
         />
-        {/* You can add more <source> elements for different video formats */}
         Your browser does not support the video tag.
       </video>
+      <div className="video-overlay"></div> {/* optional overlay if needed */}
     </div>
   );
 };

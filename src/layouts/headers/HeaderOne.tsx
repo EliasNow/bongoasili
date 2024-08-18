@@ -12,7 +12,7 @@ import LoginModal from "@/modals/LoginModal"
 import Bongo_Asili from "@/assets/images/logo/Bongo_Asili-removebg-preview.png"
 
 const HeaderOne = ({ style }: any) => {
-   const { sticky } = UseSticky();
+   const sticky = UseSticky();
 
    return (
       <>

@@ -447,7 +447,7 @@ import logo_2 from "@/assets/images/logo/logo_01.svg";
 import logo_3 from "@/assets/images/logo/logo_01.svg";
 
 const HeaderHeader = ({ style_1, style_2 }: any) => {
-  const { sticky } = UseSticky();
+  const sticky = UseSticky();
   const [offCanvas, setOffCanvas] = useState<boolean>(false);
   const [isSearch, setIsSearch] = useState<boolean>(false);
 

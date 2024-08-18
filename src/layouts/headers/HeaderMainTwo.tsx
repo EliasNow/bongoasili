@@ -7,7 +7,7 @@ import UseSticky from "@/hooks/UseSticky"
 import Bongo_Asili from "@/assets/images/logo/Bongo_Asili-removebg-preview.png"
 
 const HeaderMainTwo = ({ style }: any) => {
-   const { sticky } = UseSticky();
+   const sticky = UseSticky();
 
    return (
       <>

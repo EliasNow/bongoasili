@@ -11,7 +11,7 @@ import logo_1 from "@/assets/images/logo/logo_06.svg";
 
 const HeaderFour = () => {
 
-   const { sticky } = UseSticky();
+   const sticky = UseSticky();
    const [isSearch, setIsSearch] = useState<boolean>(false);
    
    return (
